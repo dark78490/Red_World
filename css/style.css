@@ -1,0 +1,864 @@
+/*  وَقُلْ رَبِّ زِدْنِي عِلْمًا */
+/*  صلي على رسول الله   */
+/*  اللهم صلي وسلم وبارك على سيدنا نبينا محمد */
+/* ///////////////////////////////////////////////////////// */
+/* 1_ COMMON STYLES
+   2_ GENERAL STYLES
+   3_ SECTIONS 
+     3.0 HEADER SECTION
+     3.1 HOME SECTION
+     3.2 ABOUT SECTION
+     3.3
+     3.4
+     3.5 SERVICE SECTION
+     3.6 NUMBERS SECTION
+     3.7 PRICING SECTION
+     3.8 TESTMONIAL SECTION
+     3.9 TEAM SECTION
+     3.10 BLOG SECTION
+     3.11 FOOTER SECTION   */
+/*  ////////////////////////////////////////////////// COMMON STYLES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                 /*  صلي على النبي  */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.hover-opacity{
+    transition:opacity .5;
+}
+.hover-opacity:hover{
+    opacity: .7;
+}
+.ltr{
+    position: relative;
+}
+.ltr:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: rgb(51, 51, 51); 
+}
+.ltr:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+     }
+/*  ////////////////////////////////////////////////// GENERAL STYLES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                 /*  صلي على النبي  */
+body {
+    background-color: black;
+    font-family: 'varela round' , sans-serif;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width:80%;
+    margin: auto;
+}
+/*  ////////////////////////////////////////////////// SIMILARITY OF NAMES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                   /*  صلي على النبي  */     
+a {
+    text-decoration: none;
+}
+.section-header {
+        text-align: center;   
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+    color: rgb(193, 28, 28);
+     }
+.section-header .line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: rgb(110, 109, 109);
+    margin: 0  auto  70px  auto;
+}
+/*  ////////////////////////////////////////////////// SECTIONS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                 /*  صلي على النبي  */
+/*  ////////////////////////////////////////////////// 3.0 HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                 /*  صلي على النبي  */
+.header {
+    width:100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(128, 28, 28);
+    opacity: 0.7;
+}
+.header .logo {
+    width:40%;
+    float: left;
+         
+}
+.nav{
+    width:60%;
+    float: left;
+    text-align: right;
+}
+.clear{
+    clear: both;
+}
+.header .container .header-content .nav > li{
+    list-style: none;
+    display: inline-block;
+}
+.header .container .header-content .nav > li > a{
+    color: #fff;
+    padding:12px;
+    display: block;
+}
+.header .container .header-content .nav > li > a:after ,
+.header .container .header-content .nav  > li > a.active:after{
+    content:"";
+    width:0;
+    height:5px;
+    display: block;
+    background-color: black;
+    margin-top: 2px;
+    transition: .5s;
+}
+.header .container .header-content .nav > li > a.active:after{
+    width:100%;
+}
+.header .container .header-content .nav > li > a:hover:after{
+    width: 100%;
+}
+.dd{
+    position: relative;
+}
+.a-bp{
+    color: white;
+    display: block;
+    padding: 10px;
+}
+.bp {
+    position: absolute;
+    width: 120px;
+    padding:5px;
+    background-color: black;
+    text-align: center;
+    left:78%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.dd:hover + .bp{
+    visibility: visible;
+    opacity:1;
+}
+/*  ////////////////////////////////////////////////// 3.1 HOME SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                    /*  صلي على النبي  */
+.home {
+    height:100vh;
+    background-image:url(../images/red-matrix.jpg);
+    background-position: cover;
+    position: relative;
+}
+.anonymous {
+    margin-top: 70px;
+    width: 600px;
+    height: 350px;
+    opacity: 0.9;
+}
+.home .h-to-home {
+    color: rgb(193, 28, 28);
+    text-align: center;
+    margin-top: 250px;
+    margin-right: 10px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: rgb(110, 109, 109);
+}
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 65%;
+}
+.home-content .btn_1-to-home {
+    min-width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: black;
+    color: red;
+    box-shadow: 5px 10px 18px red;}
+.home-content .btn_2-to-home {
+    min-width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: black;
+    color: red;
+    margin-left: 20px;
+    box-shadow: 5px 10px 18px red;
+}
+.home-content .btn_2-to-home .hover-opacity{
+    transition: 0.5;
+    
+}
+/*  ////////////////////////////////////////////////// 3.2 ABOUT SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                     /*  صلي على النبي  */
+.about {
+    padding:120px 0;
+}
+.about-content{
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+}
+.about-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border:1px solid  rgb(128, 28, 28);
+    padding: 30px 15px;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.icon{
+    color: rgb(193, 28, 28);
+    margin-bottom: 10px;
+         }
+.about-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color .5s;
+    color: rgb(172, 17, 17);
+}
+.about-content p {
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color:rgb(172, 17, 17);
+}
+.about-item-link {
+    color: rgb(110, 109, 109);
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+.about-item:hover .about-item-title{
+    color: red;
+    transition: color 1s;
+}
+.about-content p:hover{
+    color: red;
+    transition: color 1s;
+}
+.about .line {
+    width: 120px;
+}
+/*  ////////////////////////////////////////////////// 3.4 FEATURED WORKS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                     /*  صلي على النبي  */
+.portfolio {
+    background-color: rgb(14, 13, 13);
+}
+.portfolio-content {
+    overflow: hidden;
+}
+.portfolio-item{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    padding:20px;
+}
+.portfolio-item img{
+    width: 100%;
+}
+.portfolio-item.mg {
+    margin: 0 5%;
+}
+.portfolio-item .layer-content{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    height:100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition:opacity 1s;
+}
+.portfolio-item:hover .layer-content{
+    opacity:1;
+    visibility: visible;
+}
+ .layer-content .layer-info{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 80%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.layer-content .title-to-featured {
+    color: red;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0;
+}
+.color-to-icon-featured {
+    color: black;
+}
+.layer-content-title{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .4s;
+}
+.layer-content a  {
+    display: inline-block;
+    width:40px;
+    height: 40px;
+    background-color: rgb(193, 28, 28);
+    position: relative;
+    top:15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .6s;
+}
+.portfolio-item:hover .layer-content-title,.portfolio-item:hover .layer-content a,.portfolio-item:hover .layer-content .title-to-featured{
+   top:0;
+   opacity: 1;
+   visibility: visible;
+}
+.layer-content a i{
+    line-height: 40px;
+}
+/*  ////////////////////////////////////////////////// 3.4 COURSES SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                      /*  صلي على النبي  */     
+.offer-content {
+    overflow: hidden;
+}
+.offer-item{
+    width:30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid rgb(128, 28, 28) ;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+}
+.offer-item.mg{
+    margin: 0%  5%;
+}
+.offer-item .icon{
+    position: absolute;
+    left:15px;
+    top:26px;
+    color:red;
+}
+.offer-item-title {
+    text-transform: capitalize;
+    color: rgb(128, 28, 28);
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.offer-item-desc {
+ text-transform: capitalize;
+ margin-bottom: 15px;
+ line-height: 1.6;
+ color: red;
+ }
+ .offer-item.ltr:hover .offer-item-title{
+     color: red;
+ }
+ /*  ////////////////////////////////////////////////// 3.5 CHOSE US SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                       /*  صلي على النبي  */     
+.service {
+    background-color: rgb(14, 13, 13);
+    margin-top: 600px;
+}
+.service-item{
+    width:50%;
+    float:left;
+}
+.clear {
+    clear: both;
+}
+.service-item .section-header{
+    text-align:left;
+}
+.service-item .section-header .line{
+    margin: 0 0 45px 0;
+}
+.service-item-desc{
+    padding-right: 20px;
+    color:#999;
+    line-height: 1.4;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.service-list {
+    list-style: none;
+}
+.service-list li i {
+    border: 1px solid red;
+    color: red;
+    padding: 3px;
+    border-radius: 50%;
+    width: 20px;
+    height:20px;
+}
+.service-list li{
+    margin-bottom: 13px;
+    color: #999;
+}
+.klo {
+    width: 480px;
+    height: 400px;
+}
+.service-bullets{
+    list-style: none;
+    text-align: center;
+}
+.service-bullets li{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.service-bullets li.active{
+    background-color: red;
+}
+.service-bullets li:hover{
+    background-color: red;
+}
+.thx {
+    color: whitesmoke;
+}
+/*  /////////////////////////////////////////// 3.6 AWARDS SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                              /*  صلي على النبي  */
+.numbers {
+    position: relative;
+    background-image: url(../images/bgg.jpg);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.numbers-items{
+    overflow:hidden;
+    padding-top: 130px;
+}
+.number-item {
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+.number-item .icon{
+    color: red;
+    margin-bottom: 15px;
+}
+.number-item-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.number-item-text {
+    color: whitesmoke;
+}
+/*  /////////////////////////////////////////// 3.7 PRICING SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                               /*  صلي على النبي  */
+.pricing {
+    background-color: black;
+    margin: 60px;
+}
+
+.pricing-plans{
+    overflow: hidden;
+}
+.pricing-item{
+    float: left;
+    width:30%;
+    padding:30px 15px;
+    border: 1px solid rgb(236, 11, 11);
+    text-align: center;
+}
+.pricing-item-text {
+    text-transform: uppercase;
+    font-size: 17px;
+    color:gray;
+}
+.pricing-item-permonth{
+    width: 100px;
+    height: 100px;
+    padding:12px 0;
+    margin: 20px auto;
+    border: 2px solid rgb(236, 11, 11);
+    border-radius: 50%;
+}
+.dollar{
+    font-size: 50px;
+    color: gray;
+}
+.month{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: gray;
+}
+.pricing-list{
+    list-style: none;
+
+}
+.pricing-item-purchase{
+    border: 2px solid gray;
+    margin: auto;
+    padding:4px;
+    background-color: rgb(128, 28, 28);
+    display: block;
+    width: 120px;
+    margin-top: 15px;
+    transition: color .5s;
+}
+.pricing-item.mg{
+    margin: 0 5%;
+}
+.pricing-list li{
+    color:whitesmoke;
+    line-height: 1.8;
+}
+.pricing-item{
+    position: relative;
+}
+.pricing-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 53, 53);
+    transition: .5s;
+    opacity:.5;
+}
+.pricing-item:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.pricing-item:hover .pricing-item-text {
+    color:rgb(245, 12, 12);
+    transition: 1s;
+}
+.pricing-item:hover .pricing-item-permonth .month  {
+    color: rgb(245, 12, 12);
+    transition: 1s;
+}
+.pricing-item:hover .pricing-item-permonth .dollar  {
+    color: rgb(245, 12, 12);
+    transition: 1s;
+}
+.pricing-item:hover .pricing-item-permonth  {
+    color: rgb(245, 12, 12);
+    transition: 1s;
+}
+/*  /////////////////////////////////////////// 3.8 ABOUT ME SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                               /*  صلي على النبي  */
+.testimonial {
+    position: relative;
+    background-image: url(../images/tt.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}   
+.testimonial-content{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+.testimonial-item {
+    float: left;
+    width: 50%;
+    color: red;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+}
+.testimonial-toplayer{
+   padding:90px 20px 10px 150px;
+   position:relative;
+   line-height: 1.4;
+   margin-bottom: 20px;
+}
+.testimonial-toplayer img{
+   position: absolute;
+   top: 82px;
+   left: 65px;
+   border-radius: 60%;
+}
+.testimonial-desc{
+   text-transform: capitalize;
+   line-height: 1.5;
+   margin-left: 76px;
+   font-size: 14px;
+}
+.testimonial-toplayer span{
+   color: whitesmoke;
+}
+
+/*  ////////////////////////////////////////////////// 3.9 NEWS SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                     /*  صلي على النبي  */
+.blog-content{
+    overflow: hidden;
+    background-color: rgb(9, 9, 9);
+}
+.blog-title {
+    color: whitesmoke;
+}
+.team-red {
+    height: 250px;
+    width: 300px;
+}
+.blog-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(14, 13, 13);
+    position: relative;
+}
+.blog-item-img{
+    width: 100%;
+    margin-left: 23px;
+}
+.blog-list li{
+    color: rgb(172, 172, 26);
+    list-style: none;
+    margin: 10px 0;
+}
+.blog-list li{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 5px;
+}
+.blog-list li  i{
+    color: red;
+}
+.blog-info{
+    padding: 20px;
+}
+.blog-title{
+    font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 25px;
+}
+.blog-desc{
+    color: gray;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.blog-link{
+    color: red;
+}
+.blog-item.mg{
+    margin: 0 5%;
+}
+.blog-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color: rgb(96, 20, 20);
+}
+.blog-item:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}       
+/*  ////////////////////////////////////////////////// 3.10 TEAM SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                     /*  صلي على النبي  */
+.team .section-header .section-title {
+    margin-top: 75px;
+}
+.team-content {
+    overflow: auto;
+    margin-top: 85px;
+    margin-left: 100px;
+}
+.team-item {
+    float: left;
+    width: 27%;
+    background-color:rgb(23, 22, 22);
+    padding: 17px  13px;
+    text-align: center;
+    position: relative;
+}
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-overlay {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    right : 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+}
+.team-item:hover  .team-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+.team-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin-left: auto ;
+    color: rgb(128, 28, 28);
+}
+.team-overlay  a  i {
+    line-height: 40px;
+}
+.mg{
+    margin:  0px  5%;
+}
+.team-img  img {
+    width: 100%;
+    height: 100%;
+}
+
+.team-info-title {
+    padding: 10px 0px;
+    text-transform: uppercase;
+    color: red;
+}
+.team-info-text {
+    color: white;
+    font-size: 16px ;
+}
+.team-item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left:0;
+    background-color: rgb(94, 24, 24);
+    opacity: 0;
+}
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+         
+/*  ////////////////////////////////////////////////// 3.11 FOOTER SECTION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+                                                       /*  صلي على النبي  */
+                                                      
+.mmg{
+    width: 160px;
+    height: 70px;
+}
+.footer{
+    background-color:rgb(9, 9, 9);
+    text-align: center;
+    height: 300px;
+    padding: 60px 0;
+}
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+.footer-links li{
+    display: inline-block;
+    background-color: red;
+    width:50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.footer-links li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    color: red;
+    color: black;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+    font-size: 23px;
+    margin: -12px;
+    margin-left: 8px;
+}
+.footer-links li:after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.footer-links li:hover:after{
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;
+}
+.footer p{
+    color:#999;
+    font-size: 12px;
+    text-transform: uppercase;
+}              
